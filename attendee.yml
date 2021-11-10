@@ -1,0 +1,21 @@
+name: Attendee
+description: Add a bootcamp attendee
+title: "[Attendee] <handle>"
+labels: [Bootcamp]
+body:
+- type: checkboxes
+  attributes:
+    label: Is there an existing issue for this?
+    description: Please search to see if an issue already exists for the bug you encountered.
+    options:
+    - label: I verify the handle has not taken the bootcamp
+      required: true
+    - label: This user has no experience with GitHub
+      required: true
+- type: textarea
+  attributes:
+    label: Additional Details
+    description: What else do we need to know?
+    render: markdown
+    validations:
+    required: false
