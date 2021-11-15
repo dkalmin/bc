@@ -17,4 +17,3 @@ body:
     label: Additional Details
     description: What else do we need to know?
     render: markdown
-    required: false
